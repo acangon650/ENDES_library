@@ -1,10 +1,15 @@
 package com.endes.library;
 
+import java.util.HashSet;
+import java.util.List;
+
 import com.endes.library.interfaces.Manage;
 import com.endes.library.interfaces.Search;
 
 public class Catalog implements Search,Manage{
-
+	
+	private List<BookItem> BookList=(List<BookItem>) new HashSet();
+	
 	@Override
 	public void createBookItem(BookItem bookItem) {
 		// TODO Auto-generated method stub

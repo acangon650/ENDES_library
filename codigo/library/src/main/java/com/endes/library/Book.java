@@ -12,7 +12,7 @@ public abstract class Book {
     private String publication_date;
     private String number_of_pages;
     private Language language;
-    
+    private List<BookItem> Books;
 
     // Constructor, getters y setters aquí
 }
